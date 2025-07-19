@@ -1,4 +1,4 @@
-public class prime {
+public class primeCountInRange {
     public static void main(String[] args) {
         int n=2;
         int m =10;
@@ -23,6 +23,6 @@ public class prime {
                 //System.out.println(count);
 
     }
-}
+}   
 
         
