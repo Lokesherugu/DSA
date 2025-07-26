@@ -1,0 +1,9 @@
+| **Operation**           | **Java Code**          | **Description**                          |
+| ----------------------- | ---------------------- | ---------------------------------------- |
+| Add to **back** (tail)  | `deque.offerLast(10)`  | Adds element to the end                  |
+| Add to **front** (head) | `deque.offerFirst(10)` | Adds element to the beginning            |
+| Remove from **back**    | `deque.pollLast()`     | Removes and returns the last element     |
+| Remove from **front**   | `deque.pollFirst()`    | Removes and returns the first element    |
+| Peek at **front**       | `deque.peekFirst()`    | Views the first element without removing |
+| Peek at **back**        | `deque.peekLast()`     | Views the last element without removing  |
+| Check if **empty**      | `deque.isEmpty()`      | Returns `true` if deque is empty         |
