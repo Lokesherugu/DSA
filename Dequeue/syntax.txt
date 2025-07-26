@@ -1,0 +1,9 @@
+✅ Import & Initialization:
+
+import java.util.Deque;
+import java.util.ArrayDeque;
+Deque<Integer> deque = new ArrayDeque<>();
+
+ArrayDeque is faster than LinkedList and allows resizable arrays.
+
+Does not allow null elements.
