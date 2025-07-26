@@ -1,0 +1,7 @@
+| **Rule #** | **Concept**                      | **Example / Note**                          |
+| ---------- | -------------------------------- | ------------------------------------------- |
+| 1          | Can insert/delete from both ends | Acts like a combination of queue + stack    |
+| 2          | O(1) insert/remove on both ends  | Much faster than `ArrayList` (no shifting)  |
+| 3          | No default size limit            | Automatically resizes as needed             |
+| 4          | `ArrayDeque` is not thread-safe  | Use `ConcurrentLinkedDeque` for concurrency |
+| 5          | Does not allow `null` elements   | Using `null` throws `NullPointerException`  |
