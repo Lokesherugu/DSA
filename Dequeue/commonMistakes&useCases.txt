@@ -1,0 +1,14 @@
+🧪 Common Mistakes & Best Practices (in Deque)
+Mistake / Caution	               |   Fix / Best Practice
+Using add() instead of offer()	   |    Use offer() to safely insert without throwing exceptions
+Assuming it's thread-safe	       |    Use ConcurrentLinkedDeque for multi-threaded environments
+Adding null elements	           |    Avoid null; Deques in Java do not support null
+Misusing as a stack with offer     |   	Use push() and pop() for proper LIFO (stack) behavior
+
+🚀 When to Use Deque (Real-World Use Cases)
+Use Case	                      |    Why Deque Is Useful
+Sliding Window Maximum / Minimum  |    Efficiently discard old or smaller elements from both ends
+Monotonic Queue problems	      |   Maintain increasing/decreasing order using double-ended ops
+Palindrome checking               | 	Easily compare characters from both front and back
+Zigzag level order traversal	  |  Alternate level direction by pushing/popping from both ends
+BFS with flexible level control	  |  Use front/back insertions for level-wise or priority handling

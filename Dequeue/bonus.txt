@@ -1,0 +1,7 @@
+Bonus: Stack-Like Usage
+Deque can act like a stack:
+
+Deque<Integer> stack = new ArrayDeque<>();
+stack.push(10);         // add to front
+stack.pop();            // remove from front
+stack.peek();           // view top (front)
