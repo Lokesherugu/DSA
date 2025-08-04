@@ -1,0 +1,47 @@
+public class InsertInBST {
+
+    static class Node {
+        int data;
+        Node left, right;
+        Node(int val) {
+            data = val;
+            left = right = null;
+        }
+    }
+
+    // Insert function
+    public static Node insert(Node root, int key) {
+        if (root == null) return new Node(key);
+
+        if (key < root.data) {
+            root.left = insert(root.left, key);
+        } else if (key > root.data) {
+            root.right = insert(root.right, key);
+        }
+
+        return root; // unchanged node pointer
+    }
+
+    // Inorder traversal to show tree structure
+    public static void inorder(Node root) {
+        if (root == null) return;
+        inorder(root.left);
+        System.out.print(root.data + " ");
+        inorder(root.right);
+    }
+
+    public static void main(String[] args) {
+        Node root = new Node(5);
+        root.left = new Node(3);
+        root.right = new Node(7);
+        root.left.left = new Node(2);
+        root.left.right = new Node(4);
+        root.right.right = new Node(8);
+
+        int key = 6;
+        root = insert(root, key);
+
+        System.out.print("Inorder after insertion: ");
+        inorder(root);  // Output: 2 3 4 5 6 7 8
+    }
+}
