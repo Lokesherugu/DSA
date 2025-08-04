@@ -1,0 +1,37 @@
+public class SearchInBST {
+
+    static class Node {
+        int data;
+        Node left, right;
+        Node(int val) {
+            data = val;
+            left = right = null;
+        }
+    }
+
+    // Search function
+    public static boolean search(Node root, int key) {
+        if (root == null) return false;
+
+        if (root.data == key) return true;
+        else if (key < root.data) return search(root.left, key);
+        else return search(root.right, key);
+    }
+
+    public static void main(String[] args) {
+        // Build BST
+        Node root = new Node(5);
+        root.left = new Node(3);
+        root.right = new Node(7);
+        root.left.left = new Node(2);
+        root.left.right = new Node(4);
+        root.right.right = new Node(8);
+
+        int key = 4;
+
+        if (search(root, key))
+            System.out.println(key + " found in BST");
+        else
+            System.out.println(key + " not found in BST");
+    }
+}
