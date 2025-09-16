@@ -9,7 +9,6 @@ public class InsertInBST {
         }
     }
 
-    // Insert function
     public static Node insert(Node root, int key) {
         if (root == null) return new Node(key);
 
@@ -22,7 +21,6 @@ public class InsertInBST {
         return root; // unchanged node pointer
     }
 
-    // Inorder traversal to show tree structure
     public static void inorder(Node root) {
         if (root == null) return;
         inorder(root.left);
