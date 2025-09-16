@@ -8,7 +8,7 @@ public class AlphaRiTringle {
         }
     }
 
-    // Example main method to test the pattern
+    
     public static void main(String[] args) {
         pattern14(5);
     }
